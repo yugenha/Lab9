@@ -1,0 +1,169 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #e6f4ee;
+  text-align: center;
+  background-color: #066144; /* dark green */
+  border-top: .05rem solid #0b4735;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* Dark-green container palette overrides */
+/* These override some default/Bootstrap backgrounds to use dark-green shades */
+body {
+  background-color: #0b3d2e; /* page background */
+  color: #e6f4ee; /* readable on dark green */
+}
+
+.blog-header,
+.container,
+.container-fluid,
+.card,
+.blog-post {
+  background-color: #1b583d; /* dark green for main containers */
+}
+
+.card {
+  background-color: #114f37; /* slightly different dark-green for cards */
+}
+
+/* Keep nav-scroller and other utility areas transparent unless explicitly styled */
+.nav-scroller,
+.blog-pagination {
+  background-color: transparent;
+}
+
+/* Light font colors for dark backgrounds */
+h1, h2, h3, h4, h5, h6 {
+  color: #f1fbf6;
+}
+
+.blog-header,
+.blog-header-logo,
+.nav-scroller .nav-link,
+.blog-post-title {
+  color: #e6f4ee;
+}
+
+a, a:link, a:visited {
+  color: #a7e8c1;
+}
+a:hover, a:focus {
+  color: #8fe0aa;
+  text-decoration: underline;
+}
+
+.blog-post-meta, .blog-pagination > .btn {
+  color: #cfe9df;
+}
+
+/* About box (sidebar) — override Bootstrap's bg-light for the About container */
+.col-md-4 .p-4.mb-3.bg-light {
+  background-color: #114f37; /* match card dark-green */
+  color: #e6f4ee;
+}
+.col-md-4 .p-4.mb-3.bg-light a,
+.col-md-4 .p-4.mb-3.bg-light a:link,
+.col-md-4 .p-4.mb-3.bg-light a:visited {
+  color: #a7e8c1;
+}
+.col-md-4 .p-4.mb-3.bg-light h4 {
+  color: #f1fbf6;
+}
+.p-4, .mb-3, .bg-light, .rounded {
+  background-color: #114f37; /* match card dark-green */
+}

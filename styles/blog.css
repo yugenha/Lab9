@@ -179,3 +179,7 @@ a:hover, a:focus {
   font-size: 3.5rem;
   }
 }
+.table tr{
+  background-color: #1b583d; /* dark green for table rows */
+  color: #e6f4ee;
+}
